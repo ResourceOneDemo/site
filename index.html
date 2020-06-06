@@ -23,8 +23,8 @@
     id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="">
-          Resource One
+        <a class="navbar-brand codza-brand" href="">
+          Resource<span class="text-danger">One</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -36,15 +36,21 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
               Services
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">
-              News
-            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a class="dropdown-item">
+                <i class="material-icons">airport_shuttle</i> Transport & Logistics
+              </a>
+              <a class="dropdown-item">
+                <i class="material-icons">phonelink</i> Technology
+              </a>
+              <a class="dropdown-item">
+                <i class="material-icons">admin_panel_settings</i> Commodity
+              </a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
@@ -53,11 +59,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
-              About
+              FAQs
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" href="">
               Contact
             </a>
           </li>
@@ -96,14 +107,14 @@
           <h1 class="title">Your Story Starts With Us.</h1>
           <h4>We are transport, logistic, Commodity broker ... a good mission statement</h4>
           <br>
-          <a target="_blank" class="btn btn-primary-outline btn-raised btn-lg">
+          <a href="#services" class="btn btn-info btn-raised btn-lg">
             Learn More
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="main main-raised">
+  <div id="services" class="main main-raised">
     <div class="container">
       <div class="section text-center">
         <div class="row">
@@ -167,16 +178,14 @@
               <img src="./assets/img/locations.jpg" alt="Location" class="img-raised img-fluid">
             </div>
             <div class="col-md-8 text-left">
-              <div class="card">
-                <h4 class="card-title">Harare
-                  <small class="card-description text-muted">Headquarters</small>
-                </h4>
+              <div class="card mt-0">
                 <div class="card-body">
+                  <strong>Harare</strong> (Our Headquarters)
                   <p class="card-description">We are located in ...</p>
-                </div>
-                <div class="card-footer">
+                  <p class="card-description">2339 Unit B Seke,<br> Chitungwiza</p>
                   <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-map"></i></a>
                   <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-phone"></i></a>
+
                 </div>
               </div>
             </div>
@@ -263,7 +272,7 @@
           Learn More
         </a>
       </div>
-      <div class="section section-contacts">
+      <div id="contact" class="section section-contacts">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="text-center title">Work with us</h2>
@@ -307,8 +316,8 @@
       <nav class="float-left">
         <ul>
           <li>
-            <a href="https://www.creative-tim.com/">
-              Creative Tim
+            <a>
+              ResourceOne
             </a>
           </li>
           <li>
@@ -326,6 +335,11 @@
               News
             </a>
           </li>
+          <li>
+            <a href="">
+              Media
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="copyright float-right">
@@ -333,7 +347,7 @@
         <script>
           document.write(new Date().getFullYear())
         </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
+        <a>ResourceOne</a> for a better transportation.
       </div>
     </div>
   </footer>
